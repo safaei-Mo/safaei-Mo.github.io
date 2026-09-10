@@ -1,20 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mohammad Safaei</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            background: white;
+        }
+
+        /* Navigation */
+
+        nav {
+            background-color: #1f1f1f;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-name {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #8fc5e8;
+        }
+
+        /* Hero */
+
+        .hero {
+            height: 330px;
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.65),
+                    rgba(0,0,0,0.65)
+                ),
+                url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: 52px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        .line {
+            width: 90px;
+            height: 5px;
+            background: #6aaed6;
+            margin-top: 20px;
+        }
+
+        /* Main content */
+
+        .container {
+            max-width: 1050px;
+            margin: 60px auto;
+            padding: 0 25px;
+        }
+
+        .welcome {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .photo-placeholder {
+            width: 350px;
+            height: 400px;
+            background: #eeeeee;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #777;
+            font-size: 18px;
+        }
+
+        .welcome-text {
+            flex: 1;
+        }
+
+        .welcome-text h2 {
+            color: #467696;
+            font-size: 34px;
+        }
+
+        .welcome-text p {
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav div {
+                margin-top: 15px;
+            }
+
+            .welcome {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-    <h1>Mohammad Safaei</h1>
+    <nav>
 
-    <h2>Ph.D. Candidate in Geography</h2>
+        <div class="site-name">
+            Mohammad Safaei
+        </div>
 
-    <p>University of Florida</p>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Research</a>
+            <a href="#">Publications</a>
+            <a href="#">Teaching</a>
+            <a href="#">Projects</a>
+            <a href="#">CV</a>
+            <a href="#">Contact</a>
+        </div>
 
-    <p>
-        Remote Sensing | GIS | GeoAI | Land Change Science
-    </p>
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>Mohammad Safaei</h1>
+
+        <p>
+            Remote Sensing | GIS | GeoAI | Land Change Science
+        </p>
+
+        <div class="line"></div>
+
+    </section>
+
+
+    <div class="container">
+
+        <div class="welcome">
+
+            <div class="photo-placeholder">
+                Your Photo
+            </div>
+
+            <div class="welcome-text">
+
+                <h2>Welcome</h2>
+
+                <p>
+                    I am a Ph.D. Candidate in Geography at the University of Florida.
+                    My research integrates remote sensing, geospatial analysis, and
+                    artificial intelligence within Land Change Science.
+                </p>
+
+                <p>
+                    My work focuses on vegetation dynamics, land-cover change,
+                    time-series analysis, and ecological applications of geospatial
+                    data. I also work on species distribution modeling,
+                    vector-borne disease modeling, and UAS-based mapping.
+                </p>
+
+                <p>
+                    This website highlights my research, publications, projects,
+                    teaching experience, and professional work.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
+
 </html>
