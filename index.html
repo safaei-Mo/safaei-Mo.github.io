@@ -102,18 +102,12 @@
             align-items: center;
         }
 
-        .photo-placeholder {
-            width: 350px;
-            height: 400px;
-            background: #eeeeee;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            color: #777;
-            font-size: 18px;
-        }
+        .profile-photo {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
 
         .welcome-text {
             flex: 1;
@@ -190,10 +184,7 @@
 
         <div class="welcome">
 
-            <div class="photo-placeholder">
-                Your Photo
-            </div>
-
+            <img src="Profile.jpg" alt="Mohammad Safaei" class="profile-photo">
             <div class="welcome-text">
 
                 <h2>Welcome</h2>
