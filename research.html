@@ -69,6 +69,36 @@
         p {
             line-height: 1.7;
         }
+        .research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.research-card {
+    padding: 28px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    background: white;
+}
+
+.research-card h2 {
+    margin-top: 0;
+    color: #467696;
+    font-size: 22px;
+}
+
+.research-card p {
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
 
@@ -98,34 +128,49 @@
 
 <div class="container">
 
-    <p>
-        My research integrates remote sensing, geospatial analysis,
-        and artificial intelligence to understand environmental and
-        landscape change.
-    </p>
-
-    <h2>Remote Sensing & Land Change Science</h2>
+   <div class="container">
 
     <p>
-        I use satellite remote sensing, sub-pixel analysis, and
-        time-series methods to study vegetation dynamics and
-        long-term landscape change.
+        My research integrates remote sensing, geospatial analysis, and
+        artificial intelligence to understand environmental and landscape
+        change, with applications in ecology, conservation, and public health.
     </p>
 
-    <h2>GeoAI & Time-Series Modeling</h2>
+    <div class="research-grid">
 
-    <p>
-        My work applies machine learning and deep learning methods
-        to geospatial and Earth observation data for change detection,
-        environmental monitoring, and forecasting.
-    </p>
+        <div class="research-card">
+            <h2>Remote Sensing & Land Change Science</h2>
 
-    <h2>Ecological & Public Health Applications</h2>
+            <p>
+                I use satellite remote sensing, spectral mixture analysis,
+                and long-term Earth observation data to study vegetation
+                dynamics, land-cover change, and landscape transformation.
+            </p>
+        </div>
 
-    <p>
-        I also use geospatial approaches for species distribution
-        modeling and vector-borne disease research.
-    </p>
+        <div class="research-card">
+            <h2>GeoAI & Time-Series Analysis</h2>
+
+            <p>
+                I apply machine learning, deep learning, change detection,
+                and time-series modeling to geospatial data for environmental
+                monitoring and forecasting.
+            </p>
+        </div>
+
+        <div class="research-card">
+            <h2>Ecology & Medical Geography</h2>
+
+            <p>
+                I use GIS, species distribution modeling, and environmental
+                data to investigate ecological patterns and vector-borne
+                disease systems.
+            </p>
+        </div>
+
+    </div>
+
+</div>
 
 </div>
 
