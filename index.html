@@ -23,16 +23,16 @@
         /* Navigation */
 
         nav {
-    background-color: #1f1f1f;
-    padding: 18px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+            background-color: #1f1f1f;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
         .site-name {
             color: white;
@@ -55,6 +55,7 @@
 
         .hero {
             height: 330px;
+
             background:
                 linear-gradient(
                     rgba(0,0,0,0.35),
@@ -106,13 +107,14 @@
             align-items: center;
         }
 
-    .profile-photo {
-    width: 330px;
-    height: 400px;
-    object-fit: cover;
-    object-position: center 40%;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-}
+        .profile-photo {
+            width: 330px;
+            height: 400px;
+            object-fit: cover;
+            object-position: center 40%;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+            flex-shrink: 0;
+        }
 
         .welcome-text {
             flex: 1;
@@ -121,12 +123,15 @@
         .welcome-text h2 {
             color: #467696;
             font-size: 34px;
+            margin-top: 0;
         }
 
         .welcome-text p {
             line-height: 1.7;
             font-size: 16px;
         }
+
+        /* Mobile */
 
         @media (max-width: 800px) {
 
@@ -138,12 +143,28 @@
                 margin-top: 15px;
             }
 
+            nav a {
+                display: inline-block;
+                margin: 5px 10px;
+            }
+
             .welcome {
                 flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-photo {
+                width: 100%;
+                max-width: 330px;
             }
 
             .hero h1 {
                 font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 16px;
+                padding: 0 20px;
             }
         }
 
@@ -151,7 +172,11 @@
 
 </head>
 
+
 <body>
+
+
+    <!-- Navigation -->
 
     <nav>
 
@@ -160,21 +185,23 @@
         </div>
 
         <div>
-    <a href="index.html">Home</a>
-    <a href="teaching.html">Teaching Experience and Reviews</a>
-    <a href="publications.html">Publications</a>
-    <a href="cv.html">CV</a>
+            <a href="index.html">Home</a>
+            <a href="teaching.html">Teaching Experience and Reviews</a>
+            <a href="publications.html">Publications</a>
+            <a href="cv.html">CV</a>
         </div>
 
     </nav>
 
+
+    <!-- Hero -->
 
     <section class="hero">
 
         <h1>Mohammad Safaei</h1>
 
         <p>
-            Remote Sensing | GeoAI | Land Change Science | Disease Ecology
+            GIS | Remote Sensing | GeoAI | Land Change Science | Disease Ecology
         </p>
 
         <div class="line"></div>
@@ -182,44 +209,59 @@
     </section>
 
 
+    <!-- About Me -->
+
     <div class="container">
 
-        <div class="About Me">
+        <div class="welcome">
 
-            <img src="Profile.jpg" alt="Mohammad Safaei" class="profile-photo">
+            <img
+                src="Profile.jpg"
+                alt="Mohammad Safaei"
+                class="profile-photo"
+            >
+
             <div class="welcome-text">
 
                 <h2>About Me</h2>
 
-<p>
-    I am a Ph.D. Candidate in Geography at the University of Florida. I also hold an M.Sc. in Remote Sensing and GIS and a B.Sc. in Natural Resources Engineering.
-</p>
+                <p>
+                    I am a Ph.D. Candidate in Geography at the University of Florida.
+                    I also hold an M.Sc. in Remote Sensing and GIS and a B.Sc. in
+                    Natural Resources Engineering.
+                </p>
 
-<p>
-    My primary research integrates remote sensing, GIS, and GeoAI within Land Change Science. More recently, I have also been working on species distribution modeling and vector-borne disease research.
-</p>
+                <p>
+                    My primary research integrates remote sensing, GIS, and GeoAI
+                    within Land Change Science. More recently, I have also been
+                    working on species distribution modeling and vector-borne
+                    disease research.
+                </p>
 
-<p>
-    This website includes information about my teaching experience, publications, and CV.
-</p>
+                <p>
+                    This website includes information about my teaching experience,
+                    publications, and CV.
+                </p>
 
-<p>
-    Outside of my research and teaching, I enjoy playing soccer, volleyball, and pickleball.
-</p>
+                <p>
+                    Outside of my research and teaching, I enjoy playing soccer,
+                    volleyball, and pickleball.
+                </p>
 
-<p>
-    Please feel free to reach out if you have any questions.
-</p>
+                <p>
+                    Please feel free to reach out if you have any questions.
+                </p>
 
-<p>
-    Mohammad
-</p>
+                <p>
+                    Mohammad
+                </p>
 
             </div>
 
         </div>
 
     </div>
+
 
 </body>
 
